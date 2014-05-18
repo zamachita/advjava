@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package example;
+package example.collection;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,14 +13,19 @@ import java.util.List;
  *
  * @author chaiwat
  */
-public class Example {
-    
-    public void test() {
-        List<String> sl = new ArrayList<>();
-    }
+public class ListExample {
     
     public static void main(String[] args) {
-        System.out.println("Hello World");
+        List<Integer> l = new ArrayList<>();
+        for (int i = 0; i < 10; i ++) {
+            l.add(i + 10);
+        }
+        
+        for (Integer i : l) {
+            System.out.println(": " + i);
+        }
+        
+        System.out.println(l.get(9));
     }
     
 }

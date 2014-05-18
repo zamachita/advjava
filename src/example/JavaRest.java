@@ -31,7 +31,7 @@ public class JavaRest {
             URL url = new URL(server + ext);
  
             URLConnection connection = url.openConnection();
-            HttpURLConnection httpConnection = (HttpURLConnection)connection;
+            HttpURLConnection httpConnection = (HttpURLConnection) connection;
             connection.setRequestProperty("Content-Type", "application/json");
 
             InputStream response = connection.getInputStream();
